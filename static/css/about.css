@@ -1,3 +1,8 @@
+.about_height {
+    height: 100vh;
+    min-height: 1180px;
+}
+
 /* 애니메이션 */
 .about_animation{
     animation: riseFromBottom 0.5s forwards;

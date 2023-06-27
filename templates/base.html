@@ -6,7 +6,7 @@
     <title>스튜디오야수</title>
     <meta name="title" content="스튜디오야수"/>
     <meta name="description" content="스튜디오야수 공식 홈페이지"/>
-    <link rel="icon" href="{% static 'img/스튜디오야수(한국버전).png' %}"/>
+    <link rel="icon" href="{% static 'img/logo.png' %}"/>
 
     <meta property="og:title" content="스튜디오야수"/> 
     <meta property="og:type" content="homepage"/>
@@ -21,11 +21,16 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/works.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/news.css' %}">
 </head>
 <body>
       <!-- pc버전 -->
   <div class="navbar_main">
-    <a class="navbar_logo" href="{% url 'about:index' %}">스튜디오야수</a>
+    <a class="navbar_logo" href="{% url 'about:index' %}">
+        <img src="{% static 'img/logo.png' %}">
+        <span style="vertical-align: middle;">스튜디오야수</span>
+    </a>
+    
     <div class="navbar_links">
         <a href="{% url 'about:about' %}">ABOUT</a>
         <a href="{% url 'works:works' %}">WORKS</a>

@@ -1,3 +1,8 @@
+.works_height {
+    height: 100vh;
+    min-height: 1900px;
+}
+
 /* works 메인 */  
 .works_container {
     display: flex;
@@ -78,7 +83,7 @@
 
 
 .works_detail_li, .works_detail_lx{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: inline-block;
     margin-bottom: 2rem;
 }
