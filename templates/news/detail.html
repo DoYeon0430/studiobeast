@@ -1,13 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="image-container">
-    <img src="{% static 'img/backimg-01.jpg' %}" class="side-background" alt="배경 이미지">
-
-    <div class="img_about_main">
-    <div class="img_about_one">WORKS</div>
-    <div class="img_about_two">최고의 이야기를 담은 영화를 제작, 감동과 재미를 넘어선 경험을 선사합니다.</div>
+<div class="news_detail_height">
+    <div class="image-container">
+        <img src="{% static 'img/backimg-01.jpg' %}" class="side-background" alt="배경 이미지">
+        <div class="img_about_main">
+            <div class="img_about_one">NEWS</div>
+            <div class="img_about_two">최고의 이야기를 담은 영화를 제작, 감동과 재미를 넘어선 경험을 선사합니다.</div>
+        </div>
+    </div>
+    <div class="about_animation">
+        <h2 class="works_text_one">NOTICE</h2>
+        <div class="news_detail_main">
+            <h3>{{ index.subject }}</h3>
+            <p class="news_detail_author">{{ index.author }} | {{ index.create_date|date:"Y-m-d" }}</p>
+            <div class="news_detail_content">{{ index.content }}</div>
+        </div>
+        <div class="button_main"><a href="{% url 'news:news' %}" class="button_side" style="font-size: 1.1rem; padding: 10px 53px;;">목록</a></div>
     </div>
 </div>
-{{ index.subject}}
+
 {% endblock %}

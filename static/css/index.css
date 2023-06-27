@@ -56,7 +56,7 @@
   }
 
   
-  @media (min-width: 1000px) {
+@media all and (min-width:1024px) {
   .text-animation{
     animation: slideInLeft 1s forwards
   }
@@ -106,7 +106,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     color: #fff; 
     z-index: 999;
     animation: navbarBottom 0.5s forwards
@@ -150,9 +150,8 @@
     margin-left: 10%;
     text-decoration: none;
     color: #fff;
-    font-size: 2rem;
-    font-weight: 400;
-    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.4rem;
+    font-weight: 700;
     display: flex; 
     align-items: center;
   }
@@ -160,7 +159,6 @@
   .navbar_logo img {
     width: 40px; 
     height: 40px;
-    margin-right: 2px;
   }
 
   .navbar_scroll {
@@ -193,14 +191,14 @@
 
   .button_side {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 40px;
     color: #000;
     font-weight: 700;
     border: 2px solid #000;
     box-sizing: border-box;
     line-height: 1.5;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     outline: none;
     white-space: nowrap;
   }
@@ -267,7 +265,7 @@
   .main_two_text {
     display: flex;
     justify-content: start;
-    padding: 2rem 1rem 1rem 0;
+    padding: 2rem 0 1rem 0;
   }
 
   .main_two_text_one{
@@ -295,7 +293,7 @@
   .main_three_text {
     display: flex;
     justify-content: start;
-    padding: 2rem 1rem 1rem 0;
+    padding: 2rem 0 1rem 0;
   }
 
   .main_three_text_one{
@@ -381,7 +379,7 @@
   .main_four_text {
     display: flex;
     justify-content: start;
-    padding: 2rem 1rem 1rem 0;
+    padding: 2rem 0 1rem 0;
   }
 
   .main_four_text_one{
@@ -448,7 +446,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media all and (min-width:768px) and (max-width:1023px) {
   .text-animation{
     animation: riseFromBottom 1s forwards
   }
@@ -475,11 +473,11 @@
     align-items: center;
     color: white;
     margin: 0 auto;
-    font-size: 6rem;
+    font-size: 3.5rem;
     font-weight: 600;
     border-bottom: 3px solid white;
     padding-bottom: 0.5rem;
-    width: 90vw;
+    width: 500px;
   }
 
   .img_text_two {
@@ -487,9 +485,9 @@
     align-items: center;
     margin: 0 auto;
     color: white;
-    font-size: 1.7rem;
-    padding-top: 4rem;
-    width: 90vw;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    width: 500px;
   }
 
   /* 네비게이션 바 */
@@ -498,23 +496,28 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 160px;
+    height: 96px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
     color: #fff; 
     z-index: 999;
     animation: navbarBottom 0.5s forwards
   }
 
   .navbar_logo {
-    margin-left: 5%;
+    margin-left: 3%;
     text-decoration: none;
-    color: #ffffff;
-    font-size: 4.5rem;
-    font-weight: 500;
-    font-family: 'Nanum Pen Script', cursive;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex; 
+    align-items: center;
+  }
+
+  .navbar_logo img {
+    width: 60px; 
+    height: 60px;
   }
 
   .navbar_links {
@@ -545,7 +548,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 50%;
     height: 100%;
     background-color: #0e0e0e;
     padding: 2rem;
@@ -562,18 +565,26 @@
   .navbar_menu a {
     position: relative;
     color: #ffffff;
-    font-size: 3rem;
-    margin-left: 2rem;
-    margin-bottom: 5rem;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
     text-decoration: none;
     font-weight: 600;
   }
 
+  .navbar_burger svg {
+    width: 64px;
+    height: 64px;
+  }
+
   .navbar_menu svg {
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 1.5rem;
+    right: 1.5rem;
     cursor: pointer;
+    color: white;
+    width: 48px;
+    height: 48px;
   }
 
   .navbar_menu.active {
@@ -585,30 +596,28 @@
     pointer-events: auto;
   }
 
-
   .navbar_scroll {
     background-color: #0e0e0e;
     z-index: 5;
-    opacity: 0.9;
   }
 
   /* 버튼 디자인 */  
   .button_main {
     width: 100%;
     text-align: center;
-    padding: 2rem 0 4rem 0;
+    padding: 1rem 0 2rem 0;
   }
 
   .button_side {
     display: inline-block;
-    padding: 20px 40px;
+    padding: 10px 30px;
     color: #000;
     font-weight: 700;
-    border: 5px solid #000;
+    border: 3px solid #000;
     box-sizing: border-box;
     line-height: 1.5;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 1.1rem;
     outline: none;
     white-space: nowrap;
   }
@@ -639,12 +648,12 @@
     text-align: center;
     flex-shrink: 0; /* 추가 */
     transition: transform 0.3s ease;
-    margin-right: 3rem;
+    margin-right: 2rem;
 
   }
 
   .main_poster_img img {
-    width: 350px;
+    width: 200px;
     height: auto;
     object-fit: cover;
   }
@@ -652,7 +661,7 @@
   .main_poster_img p {
     margin: 0;
     padding-top: 1rem;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
 
@@ -681,16 +690,16 @@
   }
 
   .main_two_text_one{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     color: #000000;
-    padding: 0 3rem;
+    padding: 0;
     opacity: 0;
   }
 
   .main_two_wrapper {
-    font-size: 2.3rem;
-    width: 90vw;
+    font-size: 1.5rem;
+    width: 80vw;
     margin: 0 auto;
     margin-bottom: 2rem;
   }
@@ -709,16 +718,16 @@
   }
 
   .main_three_text_one{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     color: #000000;
-    padding: 0 3rem;
+    padding: 0;
     opacity: 0;
   }
 
   .main_three_text_two{
-    font-size: 2.3rem;
-    width: 90vw;
+    font-size: 1.5rem;
+    width: 80vw;
     margin: 0 auto;
     text-align: center;
   }
@@ -739,7 +748,7 @@
   }
 
   .main_three_img img {
-    width: 380px;
+    width: 200px;
     height: auto;
     object-fit: cover;
     background-color: #f3f3f3;
@@ -750,7 +759,7 @@
     top: 10%;
     left: 0;
     opacity: 0;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #fff;
     font-weight: 100;
     padding: 0.5rem 1rem;
@@ -773,7 +782,7 @@
     width: 100%; /* 추가 */
     margin: 0;
     padding: 0.5rem 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: #0e0e0e;
     color: #fff;
     font-weight: 600;
@@ -794,18 +803,19 @@
   }
 
   .main_four_text_one{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     color: #000000;
-    padding: 0 3rem;
+    padding: 0;
     opacity: 0;
   }
 
   .accordion{
     width: 90vw;
     margin: 0 auto;
-    --bs-accordion-btn-icon-width: 2rem;
+    --bs-accordion-btn-icon-width: 1.5rem;
     --bs-accordion-btn-active-icon:none;
+    margin-bottom: 2rem;
   }
   
   .accordion-button:focus {
@@ -822,13 +832,12 @@
   .accordion-button {
     font-weight: 600;
     color: #393838!important;
-    font-size: 3rem!important;
-    padding: 2rem!important;
-    margin-bottom: 1rem!important;
+    font-size: 1.5rem!important;
+    padding: 1rem!important;
   }
 
   .accordion-body {
-    font-size: 2.3rem!important;
+    font-size: 1rem!important;
   }
 
   /* 홈페이지 footer */  
@@ -849,14 +858,441 @@
   .footer_text p,
   .footer_text span {
     margin: 0;
-    font-size: 2.3rem;
+    font-size: 1rem;
     color: #fff;
     padding: 0.5rem 1rem;
   }  
 
   .footer_right{
     font-weight: 900;
-    font-size: 2.5rem!important;
+    font-size: 1.5rem!important;
+    color: #676767!important;
+  }
+}
+
+@media all and (max-width:767px) {
+  body {
+    overflow-x: hidden; /* 가로 스크롤 막기 */
+  }
+  .text-animation{
+    animation: riseFromBottom 1s forwards
+  }
+
+  /* 이미지 바 */
+  .dark-background {
+    width: 100%;
+    height: 100vh; /* 이미지의 높이를 설정하세요 */
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .img_text_main{
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: slideInFromTop 0.5s ease-in-out;
+  }
+
+  .img_text_one {
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: 600;
+    border-bottom: 3px solid white;
+    padding-bottom: 0.5rem;
+    width: 80vw;
+  }
+
+  .img_text_two {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 1rem;
+    padding-top: 1rem;
+    width: 80vw;
+  }
+
+  /* 네비게이션 바 */
+  .navbar_main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; 
+    z-index: 999;
+    animation: navbarBottom 0.5s forwards
+  }
+
+  .navbar_logo {
+    margin-left: 3%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex; 
+    align-items: center;
+  }
+
+  .navbar_logo img {
+    width: 40px; 
+    height: 40px;
+  }
+
+  .navbar_links {
+    display: none;
+  }
+
+  .navbar_burger {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .navbar_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease;
+  }
+
+  .navbar_menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #0e0e0e;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(100%);
+    z-index: 999;
+    transition: transform 0.3s ease;
+    opacity: 0.9;
+  }
+
+  .navbar_menu a {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-left: 0.3rem;
+    margin-bottom: 3rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .navbar_burger svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .navbar_menu svg {
+    position: fixed;
+    top: 1.4rem;
+    right: 1.4rem;
+    cursor: pointer;
+    color: white;
+    width: 36px;
+    height: 36px;
+  }
+
+  .navbar_menu.active {
+    transform: translateX(0);
+  }
+
+  .navbar_overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar_scroll {
+    background-color: #0e0e0e;
+    z-index: 5;
+  }
+
+  /* 버튼 디자인 */  
+  .button_main {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+  }
+
+  .button_side {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: 700;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-decoration: none;
+    font-size: 1rem;
+    outline: none;
+    white-space: nowrap;
+  }
+
+  .button_side:hover, .button_side:focus {
+    background-color: #f4f1f1;
+  }
+
+  /* 홈페이지 포스터 */  
+  .main_poster {
+    position: relative;
+    overflow-x: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 0 1rem 0;
+  }
+  
+  .main_poster_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loop 30s linear infinite;
+  }
+
+  .main_poster_img {
+    text-align: center;
+    flex-shrink: 0; /* 추가 */
+    transition: transform 0.3s ease;
+    margin-right: 1rem;
+
+  }
+
+  .main_poster_img img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .main_poster_img p {
+    margin: 0;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  @keyframes loop {
+    100% {
+      transform: translateX(-100%);
+  }}
+
+  @-webkit-keyframes loop {
+    100% {
+      transform: translateX(-100%);
+  }}
+
+      /* 홈페이지 두번째 단 */ 
+  .main_two {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main_two_text {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 1rem 0;
+  }
+
+  .main_two_text_one{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000000;
+    padding: 0;
+    opacity: 0;
+  }
+
+  .main_two_wrapper {
+    font-size: 1rem;
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  /* 홈페이지 세번째 단 */ 
+  .main_three {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .main_three_text {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 1rem 0;
+  }
+
+  .main_three_text_one{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000000;
+    padding: 0;
+    opacity: 0;
+  }
+
+  .main_three_text_two{
+    font-size: 1rem;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .main_three_wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .main_three_img {
+    flex-shrink: 0;
+    margin: 1rem 0.5rem;
+    position: relative;
+  }
+
+  .main_three_img img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    background-color: #f3f3f3;
+  }
+
+  .main_three_img span {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    opacity: 0;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 100;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .main_three_img:hover span {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .main_three_img:hover p {
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .main_three_img p {
+    position: absolute; /* 추가 */
+    bottom: 0; /* 추가 */
+    left: 0; /* 추가 */
+    width: 100%; /* 추가 */
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9rem;
+    background-color: #0e0e0e;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  /* 홈페이지 네번째 단 */  
+
+  .main_four{
+    display: block;
+    margin: 0 auto;
+    width: 100vw;
+  }
+
+  .main_four_text {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 1rem 0;
+  }
+
+  .main_four_text_one{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000000;
+    padding: 0;
+    opacity: 0;
+  }
+
+  .accordion{
+    width: 90vw;
+    margin: 0 auto;
+    --bs-accordion-btn-icon-width: 1.5rem;
+    --bs-accordion-btn-active-icon:none;
+    margin-bottom: 2rem;
+  }
+  
+  .accordion-button:focus {
+    outline: none!important;
+    box-shadow: none!important;
+  }
+  .accordion-button:not(.collapsed) {
+    border: none!important;
+    background-color: rgb(0, 0, 0)!important;
+    box-shadow: none!important;
+    outline: none !important;
+    color: #fff!important;
+  }
+  .accordion-button {
+    font-weight: 600;
+    color: #393838!important;
+    font-size: 1.2rem!important;
+    padding: 1rem!important;
+  }
+
+  .accordion-body {
+    font-size: 1rem!important;
+  }
+
+  /* 홈페이지 footer */  
+  .footer_main {
+    border-top: 1px solid rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    background-color: #323232;
+    padding: 2rem 1rem;
+  }
+
+  .footer_text {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .footer_text p,
+  .footer_text span {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+  }  
+
+  .footer_right{
+    font-weight: 900;
+    font-size: 1.2rem!important;
     color: #676767!important;
   }
 }
