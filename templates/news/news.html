@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load news_filter %}
 {% load static %}
 {% block content %}
 <div class="news_height">
@@ -25,7 +26,7 @@
             <tbody>
                 {% for news in page_obj %}
                 <tr onclick="location.href='{% url 'news:detail' news.id %}'">
-                    <td>{{ forloop.revcounter }}</td>
+                    <td>{{ page_obj.paginator.count|sub:page_obj.start_index|sub:forloop.counter0|add:1 }}</td>
                     <td>{{ news.subject }}</td>
                     <td>{{ news.create_date|date:"Y-m-d" }}</td>
                     <td>{{ news.author }}</td>
