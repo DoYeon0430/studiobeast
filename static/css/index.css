@@ -455,7 +455,7 @@ body {
   }
 }
 
-@media all and (min-width:768px) and (max-width:1023px) {
+@media all and (min-width:768px) and (max-width:1023.98px) {
   .text-animation{
     animation: riseFromBottom 1s forwards
   }
@@ -881,7 +881,7 @@ body {
   }
 }
 
-@media all and (max-width:767px) {
+@media all and (max-width:767.98px) {
   body {
     overflow-x: hidden; /* 가로 스크롤 막기 */
   }

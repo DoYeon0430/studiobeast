@@ -105,7 +105,7 @@
 }
 }
 
-@media all and (min-width:768px) and (max-width:1023px)  {
+@media all and (min-width:768px) and (max-width:1023.98px)  {
 /* works 메인 */  
 .works_container {
     display: flex;
@@ -204,7 +204,7 @@
 }
 }
 
-@media all and (max-width:767px) {
+@media all and (max-width:767.98px) {
 /* works 메인 */  
 .works_container {
     display: flex;

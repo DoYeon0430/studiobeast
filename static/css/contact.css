@@ -1,0 +1,38 @@
+@media all and (min-width:1024px) {
+    .contact_height{
+        height: 100vh;
+        min-height: 1300px;
+    }
+
+    .contact_navermap{
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1023.98px) {
+    .contact_height{
+        height: 100vh;
+        min-height: 1000px;
+    }
+
+    .contact_navermap{
+        width: 700px;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}
+
+@media all and (max-width:767.98px) {
+    .contact_height{
+        height: 100vh;
+        min-height: 800px;
+    }
+
+    .contact_navermap{
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}
