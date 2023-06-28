@@ -23,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-                {% for news in index %}
+                {% for news in page_obj %}
                 <tr onclick="location.href='{% url 'news:detail' news.id %}'">
                     <td>{{ forloop.revcounter }}</td>
                     <td>{{ news.subject }}</td>
@@ -35,5 +35,15 @@
         </table>
     </div>
   </div>
+  <div class="pagination">
+    {% for i in page_obj.paginator.page_range %}
+        {% if page_obj.number == i %}
+            <span class="current-page">{{ i }}</span>
+        {% elif i > page_obj.number|add:-3 and i < page_obj.number|add:3 %}
+            <a href="?page={{ i }}" class="pagination-link">{{ i }}</a>
+        {% endif %}
+    {% endfor %}
+    </div>
+
 </div>
 {% endblock %}

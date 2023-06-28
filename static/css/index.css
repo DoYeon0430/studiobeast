@@ -150,10 +150,12 @@
     margin-left: 10%;
     text-decoration: none;
     color: #fff;
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 900;
     display: flex; 
     align-items: center;
+    text-align: center;
+    line-height: 1.1;
   }
 
   .navbar_logo img {
@@ -191,14 +193,14 @@
 
   .button_side {
     display: inline-block;
-    padding: 15px 40px;
+    padding: 10px 30px;
     color: #000;
     font-weight: 700;
     border: 2px solid #000;
     box-sizing: border-box;
     line-height: 1.5;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     outline: none;
     white-space: nowrap;
   }
@@ -509,15 +511,17 @@
     margin-left: 3%;
     text-decoration: none;
     color: #fff;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 900;
     display: flex; 
     align-items: center;
+    text-align: center;
+    line-height: 1.1;
   }
 
   .navbar_logo img {
-    width: 60px; 
-    height: 60px;
+    width: 45px; 
+    height: 45px;
   }
 
   .navbar_links {
@@ -526,7 +530,7 @@
 
   .navbar_burger {
     position: fixed;
-    top: 1rem;
+    top: 1.5rem;
     right: 1rem;
     cursor: pointer;
   }
@@ -573,18 +577,18 @@
   }
 
   .navbar_burger svg {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
   }
 
   .navbar_menu svg {
     position: fixed;
-    top: 1.5rem;
+    top: 2rem;
     right: 1.5rem;
     cursor: pointer;
     color: white;
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
   }
 
   .navbar_menu.active {
@@ -617,7 +621,7 @@
     box-sizing: border-box;
     line-height: 1.5;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     outline: none;
     white-space: nowrap;
   }
@@ -690,7 +694,7 @@
   }
 
   .main_two_text_one{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     color: #000000;
     padding: 0;
@@ -698,7 +702,7 @@
   }
 
   .main_two_wrapper {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 80vw;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -718,7 +722,7 @@
   }
 
   .main_three_text_one{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     color: #000000;
     padding: 0;
@@ -726,7 +730,7 @@
   }
 
   .main_three_text_two{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 80vw;
     margin: 0 auto;
     text-align: center;
@@ -803,7 +807,7 @@
   }
 
   .main_four_text_one{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     color: #000000;
     padding: 0;
@@ -832,7 +836,7 @@
   .accordion-button {
     font-weight: 600;
     color: #393838!important;
-    font-size: 1.5rem!important;
+    font-size: 1.3rem!important;
     padding: 1rem!important;
   }
 
@@ -936,10 +940,12 @@
     margin-left: 3%;
     text-decoration: none;
     color: #fff;
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 900;
     display: flex; 
     align-items: center;
+    text-align: center;
+    line-height: 1.1;
   }
 
   .navbar_logo img {
@@ -975,7 +981,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 70%;
     height: 100%;
     background-color: #0e0e0e;
     padding: 2rem;
@@ -1040,11 +1046,11 @@
     padding: 10px 20px;
     color: #000;
     font-weight: 700;
-    border: 3px solid #000;
+    border: 2px solid #000;
     box-sizing: border-box;
     line-height: 1.5;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     outline: none;
     white-space: nowrap;
   }
@@ -1117,7 +1123,7 @@
   }
 
   .main_two_text_one{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #000000;
     padding: 0;
@@ -1145,7 +1151,7 @@
   }
 
   .main_three_text_one{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #000000;
     padding: 0;
@@ -1189,7 +1195,7 @@
     font-size: 0.9rem;
     color: #fff;
     font-weight: 100;
-    padding: 0.5rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
 
   .main_three_img:hover span {
@@ -1230,7 +1236,7 @@
   }
 
   .main_four_text_one{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #000000;
     padding: 0;
@@ -1240,7 +1246,7 @@
   .accordion{
     width: 90vw;
     margin: 0 auto;
-    --bs-accordion-btn-icon-width: 1.5rem;
+    --bs-accordion-btn-icon-width: 1rem;
     --bs-accordion-btn-active-icon:none;
     margin-bottom: 2rem;
   }
@@ -1259,12 +1265,12 @@
   .accordion-button {
     font-weight: 600;
     color: #393838!important;
-    font-size: 1.2rem!important;
+    font-size: 1rem!important;
     padding: 1rem!important;
   }
 
   .accordion-body {
-    font-size: 1rem!important;
+    font-size: 0.9rem!important;
   }
 
   /* 홈페이지 footer */  
@@ -1273,7 +1279,8 @@
     display: flex;
     justify-content: center;
     background-color: #323232;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
+    height: 150px;
   }
 
   .footer_text {
@@ -1285,14 +1292,14 @@
   .footer_text p,
   .footer_text span {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.1rem 0.5rem;
   }  
 
   .footer_right{
     font-weight: 900;
-    font-size: 1.2rem!important;
+    font-size: 1rem!important;
     color: #676767!important;
   }
 }
