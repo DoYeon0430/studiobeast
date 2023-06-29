@@ -25,17 +25,24 @@
     </div>
     <div class="about_animation">
       <h2 class="works_text_one">NAVER MAP</h2>
-    </div>
-    <div class="contact_navermap">
-      <div id="map" style="width: 100%; height: 400px;"></div>
+      <div class="contact_navermap_text">경기도 고양시 덕양구 백양로 82. 206호-B259</div>
+      <div class="contact_navermap">
+        <div id="map" style="width: 100%; height: 400px;"></div>
+      </div>
     </div>
     <script>
       var mapOptions = {
-          center: new naver.maps.LatLng(37.3595704, 127.105399),
+          center: new naver.maps.LatLng(37.6323229,126.8340849),
           zoom: 12
       };
       
-      var map = new naver.maps.Map('map', mapOptions);
+      var map = new naver.maps.Map('map', {
+        scaleControl: false,
+        logoControl: false,
+        mapDataControl: false,
+        zoomControl: true,
+        minZoom: 6,
+      });
       resize();
       window.addEventListener('resize', resize);
       

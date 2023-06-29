@@ -7,7 +7,13 @@
     .contact_navermap{
         width: 1000px;
         margin: 0 auto;
-        margin-top: 3rem;
+    }
+
+    .contact_navermap_text {
+        width: 1000px;
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 1.3rem;
     }
 }
 
@@ -20,7 +26,13 @@
     .contact_navermap{
         width: 700px;
         margin: 0 auto;
-        margin-top: 2rem;
+    }
+
+    .contact_navermap_text {
+        width: 700px;
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 1.1rem;
     }
 }
 
@@ -33,6 +45,12 @@
     .contact_navermap{
         width: 80vw;
         margin: 0 auto;
-        margin-top: 2rem;
+    }
+
+    .contact_navermap_text {
+        width: 100vw;
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 0.9rem;
     }
 }
