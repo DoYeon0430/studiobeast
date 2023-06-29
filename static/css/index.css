@@ -132,7 +132,7 @@ body {
     text-decoration: none;
     color: #fff;
     margin-right: 4rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
     position: relative;
     padding: 0.5rem 0;
@@ -162,7 +162,7 @@ body {
     margin-left: 10%;
     text-decoration: none;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 900;
     display: flex; 
     align-items: center;
@@ -171,8 +171,8 @@ body {
   }
 
   .navbar_logo img {
-    width: 40px; 
-    height: 40px;
+    width: 50px; 
+    height: 50px;
   }
 
   .navbar_scroll {
@@ -449,13 +449,14 @@ body {
   .footer_text p,
   .footer_text span {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #fff;
+    padding: 0.1rem 1rem;
   }  
 
   .footer_right{
     font-weight: 900;
-    font-size: 0.9rem!important;
+    font-size: 1rem!important;
     color: #676767!important;
   }
 }
@@ -864,7 +865,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #323232;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
   }
 
   .footer_text {
@@ -876,14 +877,14 @@ body {
   .footer_text p,
   .footer_text span {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.1rem 1rem;
   }  
 
   .footer_right{
     font-weight: 900;
-    font-size: 1.5rem!important;
+    font-size: 0.9rem!important;
     color: #676767!important;
   }
 }
