@@ -31,17 +31,14 @@
       </div>
     </div>
     <script>
-      var mapOptions = {
-          center: new naver.maps.LatLng(37.6323229,126.8340849),
-          zoom: 12
-      };
-      
       var map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(37.6323229,126.8340849),
+        zoom: 12,
         scaleControl: false,
         logoControl: false,
         mapDataControl: false,
         zoomControl: true,
-        minZoom: 6,
+        minZoom: 2,
       });
       resize();
       window.addEventListener('resize', resize);
