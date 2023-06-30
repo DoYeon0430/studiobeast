@@ -5,7 +5,7 @@ class Works(models.Model):
     director = models.CharField(max_length=100)
     produce = models.CharField(max_length=100)
     actor = models.CharField(max_length=100)
-    create_date = models.DateTimeField()
+    create_date = models.CharField(max_length=100)
     content = models.CharField(max_length=130)
     photo = models.ImageField(upload_to='works/')
 
