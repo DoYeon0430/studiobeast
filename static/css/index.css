@@ -3,6 +3,9 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin: 0!important;
+  padding: 0!important;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 @keyframes slideInFromTop {
@@ -56,19 +59,12 @@ body {
       opacity: 1;
   }
 }
-
-  body {
-    margin: 0!important;
-    padding: 0!important;
-    font-family: 'Noto Sans KR', sans-serif;
-  }
   
+@media all and (min-width:1024px) {
   .image-container {
     position: relative;
   }
 
-  
-@media all and (min-width:1024px) {
   .text-animation{
     animation: slideInLeft 1s forwards
   }
@@ -462,6 +458,10 @@ body {
 }
 
 @media all and (min-width:768px) and (max-width:1023.98px) {
+  .image-container {
+    position: relative;
+  }
+
   .text-animation{
     animation: riseFromBottom 1s forwards
   }
@@ -890,6 +890,10 @@ body {
 }
 
 @media all and (max-width:767.98px) {
+  .image-container {
+    position: relative;
+  }
+  
   body {
     overflow-x: hidden; /* 가로 스크롤 막기 */
   }
