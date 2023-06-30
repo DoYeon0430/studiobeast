@@ -133,6 +133,7 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+TINYMCE_JS_URL = os.path.join(STATIC_URL, 'tinymce/tinymce.min.js')
 TINYMCE_DEFAULT_CONFIG = {
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 20,
