@@ -25,7 +25,7 @@
         <h2 class="works_text_one">NOTICE</h2>
         <div class="news_detail_main">
             <h3>{{ index.subject }}</h3>
-            <p class="news_detail_author">{{ index.author }} | {{ index.create_date|date:"Y-m-d" }}</p>
+            <p class="news_detail_author">{{ index.author }} | {{ index.create_date|date:"Y.m.d" }}</p>
             <div class="news_detail_content">{{ index.content|safe }}</div>
         </div>
         <div class="button_main"><a href="{% url 'news:news' %}" class="button_side" style="font-size: 1.1rem; padding: 10px 53px;;">목록</a></div>
