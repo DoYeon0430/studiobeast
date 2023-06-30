@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['52.21.197.213']
 # Application definition
 
 INSTALLED_APPS = [
+    'tinymce',
     "news.apps.NewsConfig",
     "works.apps.WorksConfig",
     "about.apps.AboutConfig",
@@ -133,3 +134,35 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+TINYMCE_DEFAULT_CONFIG = {
+    'cleanup_on_startup': True,
+    'custom_undo_redo_levels': 20,
+    'selector': 'textarea',
+    'theme': 'silver',
+    'plugins': '''
+        advlist autolink lists link image charmap print preview hr anchor
+        pagebreak searchreplace wordcount visualblocks visualchars code
+        fullscreen insertdatetime media nonbreaking save table contextmenu
+        directionality emoticons template paste textcolor colorpicker textpattern codesample
+    ''',
+    'toolbar1': '''
+        fullscreen preview bold italic underline | fontselect,
+        fontsizeselect | forecolor backcolor | alignleft alignright |
+        aligncenter alignjustify | indent outdent | bullist numlist table |
+        | link image media | codesample
+    ''',
+    'toolbar2': '''
+        visualblocks visualchars | charmap emoticons | insertdatetime
+        | hr nonbreaking | template | pagebreak restoredraft | code
+    ''',
+    'fontsize_formats': "8pt 9pt 10pt 11pt 12pt 13pt 14pt 15pt 16pt 17pt 18pt 24pt 36pt",
+    'contextmenu': 'formats | link image',
+    'menubar': True,
+    'statusbar': True,
+    'theme_advanced_resizing': True,
+    'image_class_list' : [{'title':"Fluid",'value':'img-fluid','style':{} }],
+    'image_caption':True,
+    'width': '50%',
+    'height': 600,
+}
