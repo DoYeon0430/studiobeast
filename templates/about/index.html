@@ -19,7 +19,7 @@
 
     <div class="img_text_main">
       <div class="img_text_one">Cinematic Visions</div>
-      <div class="img_text_two">최고의 이야기를 담은 영화를 제작, 감동과 재미를 넘어선 경험을 선사합니다.</div>
+      <div class="img_about_two">최고의 이야기를 담은 콘텐츠를 제작, 감동과 재미를 선사합니다.</div>
     </div>
   </div>
 
@@ -247,38 +247,36 @@
       <div class="main_three_text_two">
         스튜디오야수가 보유한 6편의 판권으로 현재 진행 중인 콘텐츠들입니다.
       </div>
-      <div class="main_three_wrapper">
-        <div class="main_three_img">
-          <img src="{% static 'img/이미지업로드.svg' %}">
-          <p>OTT <야수></p>
-          <span>감독 : 조진웅<br>원안 : 배세영<br>각본 : 김효석, 강이상<br>주연 : 조진웅<br>제작사 : 스튜디오야수</span>
+      <div class="works_container_three">
+        {% for works in continue_ott_works %}
+        <div class="works_main_three" onclick="location.href='{% url 'works:detail' works.id%}'">
+          <div class="works_over_three">
+            <span class="works_text_three">
+              <h2>{{ works.subject }}</h2>
+              <h3><{{ works.making }}></h3>
+              <p><strong>감독</strong> : {{ works.director }}</p>
+              <p><strong>PD</strong> : {{ works.produce }}</p>
+              <p><strong>주연</strong> : {{ works.actor }}</p>
+            </span>
+          </div>
+          <h2>{{ works.subject }}</h2>
         </div>
-        <div class="main_three_img">
-          <img src="{% static 'img/이미지업로드.svg' %}">
-          <p>OTT <김포></p>
-          <span>감독 : 이원석<br>원안 : 미정<br>각본 : 박상욱<br>주연 : 비공개<br>제작사 : 스튜디오야수</span>
+        {% endfor %}
+        {% for works in continue_movie_works %}
+        <div class="works_main_three" onclick="location.href='{% url 'works:detail' works.id%}'">
+          <div class="works_over_three">
+            <span class="works_text_three">
+              <h2>{{ works.subject }}</h2>
+              <h3><상업영화></h3>
+              <p><strong>감독</strong> : {{ works.director }}</p>
+              <p><strong>PD</strong> : {{ works.produce }}</p>
+              <p><strong>주연</strong> : {{ works.actor }}</p>
+            </span>
+          </div>
+          <h2>{{ works.subject }}</h2>
         </div>
-        <div class="main_three_img">
-          <img src="{% static 'img/이미지업로드.svg' %}">
-          <p>영화 <타워크레인></p>
-          <span>감독 : 김부철<br>원안 : 미정<br>각본 : 김부철<br>주연 : 비공개<br>제작사 : 스튜디오야수</span>
-        </div>
-        <div class="main_three_img">
-          <img src="{% static 'img/이미지업로드.svg' %}">
-          <p>영화 <은폐수사></p>
-          <span>감독 : 김부철<br>원안 : 미정<br>각본 : 김부철<br>주연 : 비공개<br>제작사 : 스튜디오야수</span>
-        </div>
-        <div class="main_three_img">
-          <img src="{% static 'img/이미지업로드.svg' %}">
-          <p>영화 <보안사></p>
-          <span>감독 : 미정<br>원안 : 미정<br>각본 : 김영주<br>주연 : 비공개<br>제작사 : 스튜디오야수</span>
-        </div>
-        <div class="main_three_img">
-          <img src="{% static 'img/이미지업로드.svg' %}">
-          <p>영화 <엘리베이터></p>
-          <span>감독 : 권수경<br>원안 : 미정<br>각본 : 이상훈<br>주연 : 비공개<br>제작사 : 스튜디오야수</span>
-        </div>
-      </div>
+        {% endfor %}
+    </div>
     </div>
     <div class="button_main"><a href="{% url 'works:works' %}" class="button_side">VIEW MORE</a></div>
   </div>

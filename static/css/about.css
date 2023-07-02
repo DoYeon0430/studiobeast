@@ -22,6 +22,7 @@
         top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
+        animation: slideInFromTop 0.5s ease-in-out;
     }
 
     .img_about_one {
@@ -38,6 +39,7 @@
     .img_about_two {
         text-align: center;
         color: white;
+        margin: 0 auto;
         font-size: 1.3rem;
         padding-top: 1rem;
         width: 1000px;
@@ -127,6 +129,7 @@
         top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
+        animation: slideInFromTop 0.5s ease-in-out;
     }
 
     .img_about_one {
@@ -142,6 +145,7 @@
 
     .img_about_two {
         text-align: center;
+        margin: 0 auto;
         color: white;
         font-size: 1.1rem;
         padding-top: 1rem;
@@ -232,6 +236,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        animation: slideInFromTop2 0.5s ease-in-out;
     }
 
     .img_about_one {
@@ -247,6 +252,7 @@
 
     .img_about_two {
         text-align: center;
+        margin: 0 auto;
         color: white;
         font-size: 0.8rem;
         padding-top: 1rem;

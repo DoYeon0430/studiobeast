@@ -19,7 +19,7 @@
 
         <div class="img_about_main">
         <div class="img_about_one">WORKS</div>
-        <div class="img_about_two">최고의 이야기를 담은 영화를 제작, 감동과 재미를 넘어선 경험을 선사합니다.</div>
+        <div class="img_about_two">최고의 이야기를 담은 콘텐츠를 제작, 감동과 재미를 선사합니다.</div>
         </div>
     </div>
     <div class="about_animation">
@@ -31,6 +31,14 @@
                     <span class="works_detail_li">제목</span>
                     <span class="works_detail_lx">{{index.subject}}</span>
                 </li>
+                {% if index.subject != '야수' %}
+                {% if index.subject != '김포' %}
+                <li>
+                    <span class="works_detail_li">기획</span>
+                    <span class="works_detail_lx">{{index.making}}</span>
+                </li>
+                {% endif %}         
+                {% endif %}                  
                 <li>
                     <span class="works_detail_li">감독</span>
                     <span class="works_detail_lx">{{index.director}}</span>
@@ -40,13 +48,23 @@
                     <span class="works_detail_lx">{{index.produce}}</span>
                 </li>
                 <li>
-                    <span class="works_detail_li">배우</span>
+                    <span class="works_detail_li">주연</span>
                     <span class="works_detail_lx">{{index.actor}}</span>
                 </li>
+                {% if index.subject != '야수' %}
+                {% if index.subject != '김포' %}
                 <li>
-                    <span class="works_detail_li">개봉날짜</span>
+                    <span class="works_detail_li">개봉일</span>
                     <span class="works_detail_lx">{{index.create_date}}</span>
                 </li>
+                {% endif %}    
+                {% endif %}
+                {% if index.subject == '야수' or index.subject == '김포' %}
+                <li>
+                    <span class="works_detail_li">부작</span>
+                    <span class="works_detail_lx">{{index.making}}</span>
+                </li>
+                {% endif %}
                 <li>
                     <span class="works_detail_li">줄거리</span>
                     <span class="works_detail_lx">{{index.content}}</span>

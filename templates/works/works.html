@@ -19,13 +19,54 @@
 
       <div class="img_about_main">
         <div class="img_about_one">WORKS</div>
-        <div class="img_about_two">최고의 이야기를 담은 영화를 제작, 감동과 재미를 넘어선 경험을 선사합니다.</div>
+        <div class="img_about_two">최고의 이야기를 담은 콘텐츠를 제작, 감동과 재미를 선사합니다.</div>
       </div>
   </div>
   <div class="about_animation">
+    <h2 class="works_text_one">CONTINUE</h2>
+    <div class="works_button">
+      <ul class="works_ul">
+        <li onclick="location.href='?tag=전체'" id="active_1">전체</li>
+        <li onclick="location.href='?tag=OTT'" id="active_2">OTT</li>
+        <li onclick="location.href='?tag=영화'" id="active_3">영화</li>
+      </ul>
+    </div>    
+    <div class="works_container">
+        {% for works in continue_ott_works %}
+        <div class="works_main" onclick="location.href='{% url 'works:detail' works.id%}'">
+          <div class="works_over">
+            <span class="works_text">
+              <h2>{{ works.subject }}</h2>
+              <h3><{{ works.making }}></h3>
+              <p><strong>감독</strong> : {{ works.director }}</p>
+              <p><strong>PD</strong> : {{ works.produce }}</p>
+              <p><strong>주연</strong> : {{ works.actor }}</p>
+            </span>
+          </div>
+          <h2>{{ works.subject }}</h2>
+        </div>
+        {% endfor %}
+        {% for works in continue_movie_works %}
+        <div class="works_main" onclick="location.href='{% url 'works:detail' works.id%}'">
+          <div class="works_over">
+            <span class="works_text">
+              <h2>{{ works.subject }}</h2>
+              <h3><상업영화></h3>
+              <p><strong>감독</strong> : {{ works.director }}</p>
+              <p><strong>PD</strong> : {{ works.produce }}</p>
+              <p><strong>주연</strong> : {{ works.actor }}</p>
+            </span>
+          </div>
+          <h2>{{ works.subject }}</h2>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+  
+  <div class="about_animation">
     <h2 class="works_text_one">CONTENTS</h2>
     <div class="works_container">
-      {% for works in index %}
+      {% for works in contents_works %}
       <div class="works_main" onclick="location.href='{% url 'works:detail' works.id%}'">
         <span>
           <img src="{{ works.photo.url }}" alt="Work Photo">
@@ -36,4 +77,43 @@
     </div>
   </div>
 </div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const tag = urlParams.get('tag');
+    // Add the "a" class to the corresponding <a> tag
+    if (tag === '전체') {
+        const a1 = document.getElementById('active_1');
+        const a2 = document.getElementById('active_2');
+        const a3 = document.getElementById('active_3');
+        a1.classList.add('active');
+        a2.classList.remove('active');
+        a3.classList.remove('active');
+        
+    } else if (tag === 'OTT') {
+        const a1 = document.getElementById('active_1');
+        const a2 = document.getElementById('active_2');
+        const a3 = document.getElementById('active_3');
+        a1.classList.remove('active');
+        a2.classList.add('active');
+        a3.classList.remove('active');
+
+    } else if (tag === '영화') {
+        const a1 = document.getElementById('active_1');
+        const a2 = document.getElementById('active_2');
+        const a3 = document.getElementById('active_3');
+        a1.classList.remove('active');
+        a2.classList.remove('active');
+        a3.classList.add('active');
+
+    } else {
+        const a1 = document.getElementById('active_1');
+        const a2 = document.getElementById('active_2');
+        const a3 = document.getElementById('active_3');
+        a1.classList.add('active');
+        a2.classList.remove('active');
+        a3.classList.remove('active');
+
+    }
+</script>
 {% endblock %}
