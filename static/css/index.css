@@ -267,6 +267,11 @@ body {
     font-weight: 700;
   }
 
+  .main_poster:hover > .main_poster_wrapper {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+
   @keyframes loop {
     100% {
       transform: translateX(-100%);
