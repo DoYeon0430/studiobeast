@@ -696,6 +696,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     padding: 3rem 0 2rem 0;
+    pointer-events: none;
   }
   
   .main_poster_wrapper {
@@ -1172,6 +1173,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     padding: 2rem 0 1rem 0;
+    pointer-events: none;
   }
   
   .main_poster_wrapper {
