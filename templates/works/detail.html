@@ -31,6 +31,12 @@
                     <span class="works_detail_li">제목</span>
                     <span class="works_detail_lx">{{index.subject}}</span>
                 </li>
+                {% if index.subject == '야수' or index.subject == '김포' %}
+                <li>
+                    <span class="works_detail_li">시리즈</span>
+                    <span class="works_detail_lx">{{index.making}}</span>
+                </li>
+                {% endif %}
                 {% if index.subject != '야수' %}
                 {% if index.subject != '김포' %}
                 <li>
@@ -58,12 +64,6 @@
                     <span class="works_detail_lx">{{index.create_date}}</span>
                 </li>
                 {% endif %}    
-                {% endif %}
-                {% if index.subject == '야수' or index.subject == '김포' %}
-                <li>
-                    <span class="works_detail_li">부작</span>
-                    <span class="works_detail_lx">{{index.making}}</span>
-                </li>
                 {% endif %}
                 <li>
                     <span class="works_detail_li">줄거리</span>

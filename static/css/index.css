@@ -271,6 +271,9 @@ body {
     animation-play-state: paused;
     cursor: pointer;
   }
+  .main_poster_img:hover {
+    transform: scale(1.1);
+  }
 
   @keyframes loop {
     100% {
