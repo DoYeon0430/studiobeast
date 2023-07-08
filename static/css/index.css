@@ -477,7 +477,7 @@ body {
     border-top: 1px solid rgb(17, 17, 17);
     display: flex;
     justify-content: center;
-    background-color: #323232;
+    background-color: #1f1d1d;
     padding: 1rem 0;
   }
 
@@ -952,7 +952,7 @@ body {
     border-top: 1px solid rgb(17, 17, 17);
     display: flex;
     justify-content: center;
-    background-color: #323232;
+    background-color: #1f1d1d;
     padding: 1rem 1rem;
   }
 
@@ -1434,7 +1434,7 @@ body {
     border-top: 1px solid rgb(17, 17, 17);
     display: flex;
     justify-content: center;
-    background-color: #323232;
+    background-color: #1f1d1d;
     padding: 1rem 1rem;
     height: 150px;
   }
