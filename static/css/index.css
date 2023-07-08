@@ -496,9 +496,9 @@ body {
   }  
 
   .footer_right{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1rem!important;
-    color: #c5c5c5!important;
+    color: #c2c0c0!important;
   }
 }
 
@@ -971,9 +971,9 @@ body {
   }  
 
   .footer_right{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 0.9rem!important;
-    color: #c5c5c5!important;
+    color: #c2c0c0!important;
   }
 }
 
@@ -1454,8 +1454,8 @@ body {
   }  
 
   .footer_right{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 0.9rem!important;
-    color: #c5c5c5!important;
+    color: #c2c0c0!important;
   }
 }
