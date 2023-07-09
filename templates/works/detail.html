@@ -39,12 +39,20 @@
                 {% endif %}
                 {% if index.subject != '야수' %}
                 {% if index.subject != '김포' %}
+                {% if index.subject != '오후 네시' %}
+                <li>
+                    <span class="works_detail_li">기획, 제작</span>
+                    <span class="works_detail_lx">{{index.making}}</span>
+                </li>
+                {% endif %}
+                {% endif %}         
+                {% endif %}               
+                {% if index.subject == '오후 네시' %}
                 <li>
                     <span class="works_detail_li">기획</span>
                     <span class="works_detail_lx">{{index.making}}</span>
                 </li>
-                {% endif %}         
-                {% endif %}                  
+                {% endif %}   
                 <li>
                     <span class="works_detail_li">감독</span>
                     <span class="works_detail_lx">{{index.director}}</span>
