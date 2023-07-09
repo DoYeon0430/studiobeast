@@ -3,13 +3,13 @@
 {% block title %}
 <title>스튜디오야수 {{index.subject}} 정보</title>
 <meta name="title" content="스튜디오야수 {{index.subject}} 정보"/>
-<meta name="description" content="{{index.content}}"/>
+<meta name="description" content="스튜디오야수의 {{ index.id }}번째 작품활동"/>
 <link rel="icon" href="{% static 'img/logo.png' %}"/>
 
 <meta property="og:title" content="스튜디오야수 {{index.subject}} 정보"/> 
 <meta property="og:url" content="https://www.studiobeast.co.kr/works/{{index.id}}/"/>
 <meta property="og:type" content="homepage"/>
-<meta property="og:description" content="{{index.content}}"/> 
+<meta property="og:description" content="스튜디오야수의 {{ index.id }}번째 작품활동"/> 
 <meta property="og:image" content="{% static 'img/background.jpg' %}"/>
 {% endblock %}
 {% block content %}
