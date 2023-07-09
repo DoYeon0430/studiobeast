@@ -57,10 +57,18 @@
                     <span class="works_detail_li">감독</span>
                     <span class="works_detail_lx">{{index.director}}</span>
                 </li>
+                {% if index.subject != '감기' %}
                 <li>
                     <span class="works_detail_li">프로듀서</span>
                     <span class="works_detail_lx">{{index.produce}}</span>
                 </li>
+                {% endif %}
+                {% if index.subject == '감기' %}
+                <li>
+                    <span class="works_detail_li">총괄프로듀서</span>
+                    <span class="works_detail_lx">{{index.making}}</span>
+                </li>
+                {% endif %}  
                 <li>
                     <span class="works_detail_li">주연</span>
                     <span class="works_detail_lx">{{index.actor}}</span>
