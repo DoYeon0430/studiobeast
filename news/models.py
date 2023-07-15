@@ -9,3 +9,6 @@ class News(models.Model):
 
     def __str__(self):
         return self.subject
+    
+    class Meta:
+        verbose_name_plural = '게시물 작성'

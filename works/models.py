@@ -20,4 +20,7 @@ class Works(models.Model):
 
     def __str__(self):
         return self.subject
+    
+    class Meta:
+        verbose_name_plural = '콘텐츠 추가'
 
