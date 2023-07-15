@@ -25,221 +25,37 @@
 
   <div class="main_poster" style="background-color: #fafafa;">
     <div class="main_poster_wrapper">
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 12%}'">
-          <img src="{% static 'img/poster1.jpg' %}" alt="포스터 이미지">
-          <p>스텔라</p>
+      {% for poster in contents_works %}
+        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' poster.id %}'">
+          <img src="{{ poster.photo.url }}" alt="{{ poster.subject }} 이미지">
+          <p>{{ poster.subject }}</p>
         </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 11%}'">
-          <img src="{% static 'img/poster2.jpg' %}" alt="포스터 이미지">
-          <p>강릉</p>
+      {% endfor %}
+    </div>
+    <div class="main_poster_wrapper">
+      {% for poster in contents_works %}
+        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' poster.id %}'">
+          <img src="{{ poster.photo.url }}" alt="{{ poster.subject }} 이미지">
+          <p>{{ poster.subject }}</p>
         </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 10%}'">
-          <img src="{% static 'img/poster3.jpg' %}" alt="포스터 이미지">
-          <p>동네사람들</p>
+      {% endfor %}
+    </div>
+    <div class="main_poster_wrapper">
+      {% for poster in contents_works %}
+        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' poster.id %}'">
+          <img src="{{ poster.photo.url }}" alt="{{ poster.subject }} 이미지">
+          <p>{{ poster.subject }}</p>
         </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 8%}'">
-          <img src="{% static 'img/poster5.jpg' %}" alt="포스터 이미지">
-          <p>그래, 가족</p>
+      {% endfor %}
+    </div>
+    <div class="main_poster_wrapper">
+      {% for poster in contents_works %}
+        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' poster.id %}'">
+          <img src="{{ poster.photo.url }}" alt="{{ poster.subject }} 이미지">
+          <p>{{ poster.subject }}</p>
         </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 7%}'">
-          <img src="{% static 'img/poster6.jpg' %}" alt="포스터 이미지">
-          <p>함정</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 6%}'">
-          <img src="{% static 'img/poster7.jpg' %}" alt="포스터 이미지">
-          <p>감기</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 5%}'">
-          <img src="{% static 'img/poster8.jpg' %}" alt="포스터 이미지">
-          <p>그대를 사랑합니다</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 4%}'">
-          <img src="{% static 'img/poster9.jpg' %}" alt="포스터 이미지">
-          <p>마을금고 연쇄 습격사건</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 9%}'">
-          <img src="{% static 'img/poster4.jpg' %}" alt="포스터 이미지">
-          <p>원더풀고스트</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 3%}'">
-          <img src="{% static 'img/poster10.jpg' %}" alt="포스터 이미지">
-          <p>싸움의 기술</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 2%}'">
-          <img src="{% static 'img/poster11.jpg' %}" alt="포스터 이미지">
-          <p>마파도</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 13%}'">
-          <img src="{% static 'img/poster12.jpg' %}" alt="포스터 이미지">
-          <p>오후 4시</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 1%}'">
-          <img src="{% static 'img/poster13.jpg' %}" alt="포스터 이미지">
-          <p>맹부삼천지교</p>
-        </div>
-      </div>
-      <div class="main_poster_wrapper">
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 12%}'">
-          <img src="{% static 'img/poster1.jpg' %}" alt="포스터 이미지">
-          <p>스텔라</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 11%}'">
-          <img src="{% static 'img/poster2.jpg' %}" alt="포스터 이미지">
-          <p>강릉</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 10%}'">
-          <img src="{% static 'img/poster3.jpg' %}" alt="포스터 이미지">
-          <p>동네사람들</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 8%}'">
-          <img src="{% static 'img/poster5.jpg' %}" alt="포스터 이미지">
-          <p>그래, 가족</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 7%}'">
-          <img src="{% static 'img/poster6.jpg' %}" alt="포스터 이미지">
-          <p>함정</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 6%}'">
-          <img src="{% static 'img/poster7.jpg' %}" alt="포스터 이미지">
-          <p>감기</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 5%}'">
-          <img src="{% static 'img/poster8.jpg' %}" alt="포스터 이미지">
-          <p>그대를 사랑합니다</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 4%}'">
-          <img src="{% static 'img/poster9.jpg' %}" alt="포스터 이미지">
-          <p>마을금고 연쇄 습격사건</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 9%}'">
-          <img src="{% static 'img/poster4.jpg' %}" alt="포스터 이미지">
-          <p>원더풀고스트</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 3%}'">
-          <img src="{% static 'img/poster10.jpg' %}" alt="포스터 이미지">
-          <p>싸움의 기술</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 2%}'">
-          <img src="{% static 'img/poster11.jpg' %}" alt="포스터 이미지">
-          <p>마파도</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 13%}'">
-          <img src="{% static 'img/poster12.jpg' %}" alt="포스터 이미지">
-          <p>오후 4시</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 1%}'">
-          <img src="{% static 'img/poster13.jpg' %}" alt="포스터 이미지">
-          <p>맹부삼천지교</p>
-        </div>
-      </div>
-      <div class="main_poster_wrapper">
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 12%}'">
-          <img src="{% static 'img/poster1.jpg' %}" alt="포스터 이미지">
-          <p>스텔라</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 11%}'">
-          <img src="{% static 'img/poster2.jpg' %}" alt="포스터 이미지">
-          <p>강릉</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 10%}'">
-          <img src="{% static 'img/poster3.jpg' %}" alt="포스터 이미지">
-          <p>동네사람들</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 8%}'">
-          <img src="{% static 'img/poster5.jpg' %}" alt="포스터 이미지">
-          <p>그래, 가족</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 7%}'">
-          <img src="{% static 'img/poster6.jpg' %}" alt="포스터 이미지">
-          <p>함정</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 6%}'">
-          <img src="{% static 'img/poster7.jpg' %}" alt="포스터 이미지">
-          <p>감기</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 5%}'">
-          <img src="{% static 'img/poster8.jpg' %}" alt="포스터 이미지">
-          <p>그대를 사랑합니다</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 4%}'">
-          <img src="{% static 'img/poster9.jpg' %}" alt="포스터 이미지">
-          <p>마을금고 연쇄 습격사건</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 9%}'">
-          <img src="{% static 'img/poster4.jpg' %}" alt="포스터 이미지">
-          <p>원더풀고스트</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 3%}'">
-          <img src="{% static 'img/poster10.jpg' %}" alt="포스터 이미지">
-          <p>싸움의 기술</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 2%}'">
-          <img src="{% static 'img/poster11.jpg' %}" alt="포스터 이미지">
-          <p>마파도</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 13%}'">
-          <img src="{% static 'img/poster12.jpg' %}" alt="포스터 이미지">
-          <p>오후 4시</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 1%}'">
-          <img src="{% static 'img/poster13.jpg' %}" alt="포스터 이미지">
-          <p>맹부삼천지교</p>
-        </div>
-      </div>
-      <div class="main_poster_wrapper">
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 12%}'">
-          <img src="{% static 'img/poster1.jpg' %}" alt="포스터 이미지">
-          <p>스텔라</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 11%}'">
-          <img src="{% static 'img/poster2.jpg' %}" alt="포스터 이미지">
-          <p>강릉</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 10%}'">
-          <img src="{% static 'img/poster3.jpg' %}" alt="포스터 이미지">
-          <p>동네사람들</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 8%}'">
-          <img src="{% static 'img/poster5.jpg' %}" alt="포스터 이미지">
-          <p>그래, 가족</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 7%}'">
-          <img src="{% static 'img/poster6.jpg' %}" alt="포스터 이미지">
-          <p>함정</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 6%}'">
-          <img src="{% static 'img/poster7.jpg' %}" alt="포스터 이미지">
-          <p>감기</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 5%}'">
-          <img src="{% static 'img/poster8.jpg' %}" alt="포스터 이미지">
-          <p>그대를 사랑합니다</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 4%}'">
-          <img src="{% static 'img/poster9.jpg' %}" alt="포스터 이미지">
-          <p>마을금고 연쇄 습격사건</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 9%}'">
-          <img src="{% static 'img/poster4.jpg' %}" alt="포스터 이미지">
-          <p>원더풀고스트</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 3%}'">
-          <img src="{% static 'img/poster10.jpg' %}" alt="포스터 이미지">
-          <p>싸움의 기술</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 2%}'">
-          <img src="{% static 'img/poster11.jpg' %}" alt="포스터 이미지">
-          <p>마파도</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 13%}'">
-          <img src="{% static 'img/poster12.jpg' %}" alt="포스터 이미지">
-          <p>오후 4시</p>
-        </div>
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' 1%}'">
-          <img src="{% static 'img/poster13.jpg' %}" alt="포스터 이미지">
-          <p>맹부삼천지교</p>
-        </div>
-      </div>
+      {% endfor %}
+    </div>
   </div>
 
   <div class="main_two">
