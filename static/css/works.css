@@ -172,7 +172,8 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 400px;
-    animation: riseFromBottom 0.5s forwards;
+    opacity: 0;
+    animation: navbarFadeIn 0.5s forwards;
 }
 
 .works_detail_ul {
@@ -369,7 +370,8 @@
     justify-content: center;
     width: 250px;
     height: 356px;
-    animation: riseFromBottom 0.5s forwards;
+    opacity: 0;
+    animation: navbarFadeIn 0.5s forwards;
 }
 
 .works_detail_ul {
@@ -566,7 +568,8 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 90vw;
-    animation: riseFromBottom 0.5s forwards;
+    opacity: 0;
+    animation: navbarFadeIn 0.5s forwards;
 }
 
 .works_detail_ul {
