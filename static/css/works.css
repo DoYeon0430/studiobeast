@@ -172,7 +172,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 400px;
-    transition: transform 0.3s;
+    animation: riseFromBottom 0.5s forwards;
 }
 
 .works_detail_ul {
@@ -369,7 +369,7 @@
     justify-content: center;
     width: 250px;
     height: 356px;
-    transition: transform 0.3s;
+    animation: riseFromBottom 0.5s forwards;
 }
 
 .works_detail_ul {
@@ -566,7 +566,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 90vw;
-    transition: transform 0.3s;
+    animation: riseFromBottom 0.5s forwards;
 }
 
 .works_detail_ul {
