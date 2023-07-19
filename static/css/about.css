@@ -254,10 +254,9 @@
         align-items: center;
         color: white;
         margin: 0 auto;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 600;
         border-bottom: 3px solid white;
-        width: 60vw;
     }
 
     .img_about_two {
@@ -320,7 +319,7 @@
     }
 
     .about_two_li, .about_two_lx {
-        font-size: 1.1rem;
+        font-size: 1rem;
         display: inline-flex;
         margin-bottom: 1.5rem;
         align-items: flex-start;
