@@ -173,7 +173,7 @@
     justify-content: center;
     width: 400px;
     opacity: 0;
-    animation: navbarFadeIn 0.5s forwards;
+    animation: navbarFadeIn 1.5s forwards;
 }
 
 .works_detail_ul {
