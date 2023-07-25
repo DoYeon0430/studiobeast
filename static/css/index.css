@@ -179,7 +179,7 @@ body {
     display: flex; 
     align-items: center;
     text-align: center;
-    line-height: 1.1;
+    line-height: 1.3;
   }
 
   .navbar_logo img {
@@ -260,7 +260,7 @@ body {
 
   .main_poster_img img {
     width: 200px;
-    height: auto;
+    height: 285px;
     object-fit: cover;
   }
 
@@ -315,6 +315,14 @@ body {
     justify-content: center;
     width: 900px;
     margin: 0 auto;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .main_two_animate {
+    opacity: 1; 
+    transform: translateY(0);
   }
 
   /* 홈페이지 세번째 단 */ 
@@ -358,74 +366,55 @@ body {
     width: 33%;
     text-align: center;
     margin-bottom: 3rem;
+    position: relative;
     cursor: pointer;
-  }
-
-  .works_main_three span {
-    width: 230px;
-    height: 331px;
-    overflow: hidden;
-    display: inline-block;
   }
 
   .works_over_three {
       width: 230px;
       height: 331px;
-      overflow: hidden;
       display: inline-block;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+      position: relative;
   }
 
-  .works_main_three span.works_text_three {
+  .works_over_three img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .works_text_three {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 0.5rem;
-      width: 230px;
-      height: 331px;
-      color: white;
-      background-color: rgb(50 50 50);
       flex-direction: column;
-      transition: transform 0.3s;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.8); 
+      opacity: 0;
+      transition: opacity 0.8s;
   }
 
-  .works_main_three:hover .works_text_three{
-      transform: scale(1.05);
-      transform-origin: center;
+  .works_main_three:hover .works_text_three {
+      opacity: 1;
   }
-    
-  .works_main_three span.works_text_three h2 {
-      text-align: center;
+
+  .works_text_three p {
       font-size: 1.8rem;
-      padding: 0rem 1rem;
       font-weight: 500;
-      width: 100%;
+      margin-bottom: 0.5rem;
   }
 
-  .works_main_three span.works_text_three h3 {
-      text-align: center;
-      font-size: 1rem;
-      padding: 0rem 1rem;
-      margin: 0 0 1rem 0;
-      font-weight: 400;
-      width: 100%;
-      height: 116px;
-  }
-    
-  .works_main_three span.works_text_three p {
-      text-align: start;
-      font-size: 1rem;
-      padding: 0rem 1rem;
-      font-weight: 300;
-      width: 100%;
-      margin: 0.2rem;
-  }
-    
   .works_main_three h2 {
-      font-size: 1.3rem;
-      margin: 0.5rem 0;
-      font-weight: 600;
-      text-align: center;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
   }
   
   /* 홈페이지 네번째 단 */  
@@ -576,7 +565,7 @@ body {
   }
 
   .navbar_logo {
-    margin-left: 3%;
+    margin-left: 5%;
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
@@ -584,7 +573,7 @@ body {
     display: flex; 
     align-items: center;
     text-align: center;
-    line-height: 1.1;
+    line-height: 1.3;
   }
 
   .navbar_logo img {
@@ -729,7 +718,7 @@ body {
 
   .main_poster_img img {
     width: 200px;
-    height: auto;
+    height: 285px;
     object-fit: cover;
   }
 
@@ -782,6 +771,14 @@ body {
     width: 80vw;
     margin: 0 auto;
     margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .main_two_animate {
+    opacity: 1; 
+    transform: translateY(0);
   }
 
   /* 홈페이지 세번째 단 */ 
@@ -821,88 +818,58 @@ body {
   }
 
   .works_main_three {
-    width: 33.33%;
+    width: 33%;
     text-align: center;
     margin-bottom: 3rem;
+    position: relative;
     cursor: pointer;
   }
 
-  .works_main_three span {
-    width: 180px;
-    height: 256px;
-    overflow: hidden;
-    display: inline-block;
-  }
-
   .works_over_three {
-      width: 180px;
-      height: 256px;
-      overflow: hidden;
+      width: 200px;
+      height: 285px;
       display: inline-block;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+      position: relative;
   }
 
-  .works_main_three span.works_text_three {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 0.5rem;
-      width: 180px;
-      height: 256px;
-      color: white;
-      background-color: rgb(50 50 50);
-      flex-direction: column;
-      transition: transform 0.3s;
-  }
-
-  .works_main_three:hover .works_text_three{
-      transform: scale(1.05);
-      transform-origin: center;
-  }
-    
-  .works_main_three span.works_text_three h2 {
-      text-align: center;
-      font-size: 1.6rem;
-      padding: 0rem 1rem;
-      font-weight: 500;
-      width: 100%;
-  }
-
-  .works_main_three span.works_text_three h3 {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 0rem 1rem;
-      margin: 0 0 1rem 0;
-      font-weight: 400;
-      width: 100%;
-      height: 70px;
-  }
-    
-  .works_main_three span.works_text_three p {
-      text-align: start;
-      font-size: 0.9rem;
-      padding: 0rem 1rem;
-      font-weight: 300;
-      width: 100%;
-      margin: 0.2rem;
-  }
-    
-  .works_main_three span img {
+  .works_over_three img {
       width: 100%;
       height: 100%;
-      transition: transform 0.3s;
+      object-fit: cover;
   }
-    
-  .works_main_three:hover img {
-      transform: scale(1.1);
-      transform-origin: center;
+
+  .works_text_three {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.8); 
+      opacity: 0;
+      transition: opacity 0.8s;
   }
-    
+
+  .works_main_three:hover .works_text_three {
+      opacity: 1;
+  }
+
+  .works_text_three p {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+  }
+
   .works_main_three h2 {
-      font-size: 1.3rem;
-      margin: 0.5rem 0;
-      font-weight: 600;
-      text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 
   /* 홈페이지 네번째 단 */  
@@ -1057,7 +1024,7 @@ body {
   }
 
   .navbar_logo {
-    margin-left: 3%;
+    margin-left: 6%;
     text-decoration: none;
     color: #fff;
     font-size: 1.1rem;
@@ -1065,7 +1032,7 @@ body {
     display: flex; 
     align-items: center;
     text-align: center;
-    line-height: 1.1;
+    line-height: 1.3;
   }
 
   .navbar_logo img {
@@ -1210,7 +1177,7 @@ body {
 
   .main_poster_img img {
     width: 150px;
-    height: auto;
+    height: 214px;
     object-fit: cover;
   }
 
@@ -1263,6 +1230,14 @@ body {
     width: 80vw;
     margin: 0 auto;
     margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .main_two_animate {
+    opacity: 1; 
+    transform: translateY(0);
   }
 
   /* 홈페이지 세번째 단 */ 
@@ -1311,83 +1286,51 @@ body {
     cursor: pointer;
   }
 
-  .works_main_three span {
+  .works_over_three {
     width: 150px;
     height: 213px;
-    overflow: hidden;
     display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
   }
 
-  .works_over_three {
-      width: 150px;
-      height: 213px;
-      overflow: hidden;
-      display: inline-block;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-  }
-
-
-  .works_main_three span.works_text_three {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 0.5rem;
-      width: 150px;
-      height: 213px;
-      color: white;
-      background-color: rgb(50 50 50);
-      flex-direction: column;
-      transition: transform 0.3s;
-  }
-
-  .works_main_three:hover .works_text_three{
-      transform: scale(1.05);
-      transform-origin: center;
-  }
-    
-  .works_main_three span.works_text_three h2 {
-      text-align: center;
-      font-size: 1.3rem;
-      padding: 0rem 1rem;
-      font-weight: 500;
-      width: 100%;
-  }
-
-  .works_main_three span.works_text_three h3 {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 0rem 1rem;
-      margin: 0 0 1rem 0;
-      font-weight: 400;
-      width: 100%;
-      height: 70px;
-  }
-    
-  .works_main_three span.works_text_three p {
-      text-align: start;
-      font-size: 0.9rem;
-      padding: 0rem 1rem;
-      font-weight: 300;
-      width: 100%;
-      margin: 0.2rem;
-  }
-
-  .works_main_three span img {
+  .works_over_three img {
       width: 100%;
       height: 100%;
-      transition: transform 0.3s;
+      object-fit: cover;
   }
 
-  .works_main_three:hover img {
-      transform: scale(1.1);
-      transform-origin: center;
+  .works_text_three {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.8); 
+      opacity: 0;
+      transition: opacity 0.8s;
+  }
+
+  .works_main_three:hover .works_text_three {
+      opacity: 1;
+  }
+
+  .works_text_three p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
   }
 
   .works_main_three h2 {
-      font-size: 0.9rem;
-      margin: 0.5rem auto;
-      font-weight: 600;
-      text-align: center;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   /* 홈페이지 네번째 단 */  

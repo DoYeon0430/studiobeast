@@ -82,12 +82,9 @@
         {% for works in continue_ott_works %}
         <div class="works_main_three" onclick="location.href='{% url 'works:detail' works.id%}'">
           <div class="works_over_three">
+            <img src="{{ works.photo.url }}" alt="{{ works.subject }} 이미지">
             <span class="works_text_three">
-              <h2>{{ works.subject }}</h2>
-              <h3><{{ works.making }}></h3>
-              <p><strong>감독</strong> : {{ works.director }}</p>
-              <p><strong>PD</strong> : {{ works.produce }}</p>
-              <p><strong>주연</strong> : {{ works.actor }}</p>
+              <p>{{ works.subject }}</p>
             </span>
           </div>
           <h2>{{ works.subject }}</h2>
@@ -96,12 +93,9 @@
         {% for works in continue_movie_works %}
         <div class="works_main_three" onclick="location.href='{% url 'works:detail' works.id%}'">
           <div class="works_over_three">
+            <img src="{{ works.photo.url }}" alt="{{ works.subject }} 이미지">
             <span class="works_text_three">
-              <h2>{{ works.subject }}</h2>
-              <h3><상업영화></h3>
-              <p><strong>감독</strong> : {{ works.director }}</p>
-              <p><strong>PD</strong> : {{ works.produce }}</p>
-              <p><strong>주연</strong> : {{ works.actor }}</p>
+              <p>{{ works.subject }}</p>
             </span>
           </div>
           <h2>{{ works.subject }}</h2>
