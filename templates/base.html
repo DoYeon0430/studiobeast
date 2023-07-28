@@ -126,8 +126,6 @@
 
     var main_two_text_one = document.querySelector(".main_two_text_one");
 
-    var main_two_wrapper = document.querySelector(".main_two_wrapper");
-
     var main_three_text_one = document.querySelector(".main_three_text_one");
 
     var main_four_text_one = document.querySelector(".main_four_text_one");
@@ -136,12 +134,6 @@
         main_two_text_one.classList.add("text-animation");
       } else {
         main_two_text_one.classList.remove("text-animation");
-      }
-
-      if (isInViewport(main_two_wrapper)) {
-        main_two_wrapper.classList.add("main_two_animate");
-      } else {
-        main_two_wrapper.classList.remove("main_two_animate");
       }
 
       if (isInViewport(main_three_text_one)) {
@@ -200,7 +192,7 @@
         document.getElementById("scrollTopLink").style.display = "none";
       }
     });
-</script>
+  </script>
 <a class="draggable_off" id="scrollTopLink" href="#" style="position: fixed; bottom: 1.5rem; right: 1.5rem; display: none;"><img style="width: 40px; height: 40px; opacity: 0.7;" src="{% static 'img/top.svg' %}" alt="My Image">
 </a>
 </body>

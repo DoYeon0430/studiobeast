@@ -71,6 +71,12 @@ body {
       opacity: 1;
   }
 }
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
   
 @media all and (min-width:1024px) {
   .image-container {
@@ -110,15 +116,24 @@ body {
     font-size: 5rem;
     font-weight: 600;
     border-bottom: 3px solid white;
-    width: 700px;
+    width: 800px;
   }
 
   .img_text_two {
     text-align: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-top: 1rem;
-    width: 1000px;
+    width: 800px;
+  }
+
+  .img_svg_one {
+    position: absolute;
+    bottom: 1%;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: blink 2s infinite;
   }
 
   /* 네비게이션 바 */
@@ -253,6 +268,8 @@ body {
 
   .main_poster_img {
     text-align: center;
+    text-decoration: none;
+    color: #000;
     flex-shrink: 0; /* 추가 */
     transition: transform 0.3s ease;
     margin-right: 3rem;
@@ -311,13 +328,8 @@ body {
 
   .main_two_wrapper {
     font-size: 1.3rem;
-    align-items: center;
-    justify-content: center;
     width: 900px;
-    margin: 0 auto;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    margin: 0 auto 1rem auto;
   }
 
   .main_two_animate {
@@ -351,7 +363,7 @@ body {
     justify-content: center;
     width: 900px;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .works_container_three {
@@ -359,13 +371,15 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 1000px;
-    margin: 3rem auto 0 auto;
+    margin: 0 auto;
   }
 
   .works_main_three {
     width: 33%;
     text-align: center;
-    margin-bottom: 3rem;
+    text-decoration: none;
+    color: #000;
+    margin: 1rem 0;
     position: relative;
     cursor: pointer;
   }
@@ -439,7 +453,7 @@ body {
 
   .accordion{
     width: 900px;
-    margin: 0 auto;
+    margin: 1rem auto;
     --bs-accordion-btn-active-icon:none;
   }
   
@@ -532,7 +546,7 @@ body {
     align-items: center;
     color: white;
     margin: 0 auto;
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 600;
     border-bottom: 3px solid white;
     padding-bottom: 0.5rem;
@@ -547,6 +561,15 @@ body {
     font-size: 1.1rem;
     padding-top: 1rem;
     width: 500px;
+  }
+
+  .img_svg_one {
+    position: absolute;
+    bottom: 1%;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: blink 2s infinite;
   }
 
   /* 네비게이션 바 */
@@ -710,6 +733,8 @@ body {
 
   .main_poster_img {
     text-align: center;
+    text-decoration: none;
+    color: #000;
     flex-shrink: 0; /* 추가 */
     transition: transform 0.3s ease;
     margin-right: 2rem;
@@ -725,7 +750,7 @@ body {
   .main_poster_img p {
     margin: 0;
     padding-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
   }
 
@@ -755,7 +780,7 @@ body {
   .main_two_text {
     display: flex;
     justify-content: center;
-    padding: 4rem 0 2rem 0;
+    padding: 3rem 0 1rem 0;
   }
 
   .main_two_text_one{
@@ -771,9 +796,6 @@ body {
     width: 80vw;
     margin: 0 auto;
     margin-bottom: 2rem;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
   }
 
   .main_two_animate {
@@ -804,9 +826,8 @@ body {
 
   .main_three_text_two{
     font-size: 1.3rem;
-    width: 80vw;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .works_container_three {
@@ -814,13 +835,15 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 700px;
-    margin: 3rem auto;
+    margin: 0 auto 1rem auto;
   }
 
   .works_main_three {
     width: 33%;
     text-align: center;
-    margin-bottom: 3rem;
+    text-decoration: none;
+    color: #000;
+    margin: 1rem 0;
     position: relative;
     cursor: pointer;
   }
@@ -868,7 +891,7 @@ body {
 
   .works_main_three h2 {
     padding-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
   }
 
@@ -1006,6 +1029,15 @@ body {
     font-size: 1rem;
     padding-top: 1rem;
     width: 80vw;
+  }
+
+  .img_svg_one {
+    position: absolute;
+    bottom: 2%;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: blink 2s infinite;
   }
 
   /* 네비게이션 바 */
@@ -1169,10 +1201,11 @@ body {
 
   .main_poster_img {
     text-align: center;
+    text-decoration: none;
+    color: #000;
     flex-shrink: 0; /* 추가 */
     transition: transform 0.3s ease;
     margin-right: 1rem;
-
   }
 
   .main_poster_img img {
@@ -1230,9 +1263,6 @@ body {
     width: 80vw;
     margin: 0 auto;
     margin-bottom: 2rem;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
   }
 
   .main_two_animate {
@@ -1266,7 +1296,7 @@ body {
     font-size: 1rem;
     width: 80vw;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .works_container_three {
@@ -1282,6 +1312,8 @@ body {
   .works_main_three {
     flex-shrink: 0;
     margin: 1rem 0.5rem;
+    text-decoration: none;
+    color: #000;
     position: relative;
     cursor: pointer;
   }
@@ -1315,10 +1347,6 @@ body {
       background-color: rgba(0, 0, 0, 0.8); 
       opacity: 0;
       transition: opacity 0.8s;
-  }
-
-  .works_main_three:hover .works_text_three {
-      opacity: 1;
   }
 
   .works_text_three p {

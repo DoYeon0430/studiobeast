@@ -19,41 +19,45 @@
 
     <div class="img_text_main">
       <div class="img_text_one">Cinematic Visions</div>
-      <div class="img_about_two">최고의 이야기를 담은 콘텐츠를 제작, 감동과 재미를 선사합니다.</div>
+      <div class="img_text_two">최고의 이야기를 담은 콘텐츠를 제작, 감동과 재미를 선사합니다.</div>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="img_svg_one bi bi-chevron-double-down" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    </svg>
   </div>
 
   <div class="main_poster" style="background-color: #fafafa;">
     <div class="main_poster_wrapper">
       {% for poster in contents_works %}
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' poster.id %}'">
+        <a class="main_poster_img" href="{% url 'works:detail' poster.id %}">
           <img src="{{ poster.photo.url }}" alt="{{ poster.subject }} 이미지">
           <p>{{ poster.subject }}</p>
-        </div>
+        </a>
       {% endfor %}
     </div>
     <div class="main_poster_wrapper">
       {% for poster in contents_works %}
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' poster.id %}'">
+        <a class="main_poster_img" href="{% url 'works:detail' poster.id %}">
           <img src="{{ poster.photo.url }}" alt="{{ poster.subject }} 이미지">
           <p>{{ poster.subject }}</p>
-        </div>
+        </a>
       {% endfor %}
     </div>
     <div class="main_poster_wrapper">
       {% for poster in contents_works %}
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' poster.id %}'">
+        <a class="main_poster_img" href="{% url 'works:detail' poster.id %}">
           <img src="{{ poster.photo.url }}" alt="{{ poster.subject }} 이미지">
           <p>{{ poster.subject }}</p>
-        </div>
+        </a>
       {% endfor %}
     </div>
     <div class="main_poster_wrapper">
       {% for poster in contents_works %}
-        <div class="main_poster_img" onclick="location.href='{% url 'works:detail' poster.id %}'">
+        <a class="main_poster_img" href="{% url 'works:detail' poster.id %}">
           <img src="{{ poster.photo.url }}" alt="{{ poster.subject }} 이미지">
           <p>{{ poster.subject }}</p>
-        </div>
+        </a>
       {% endfor %}
     </div>
   </div>
@@ -80,7 +84,7 @@
       </div>
       <div class="works_container_three">
         {% for works in continue_ott_works %}
-        <div class="works_main_three" onclick="location.href='{% url 'works:detail' works.id%}'">
+        <a class="works_main_three" href="{% url 'works:detail' works.id%}">
           <div class="works_over_three">
             <img src="{{ works.photo.url }}" alt="{{ works.subject }} 이미지">
             <span class="works_text_three">
@@ -88,10 +92,10 @@
             </span>
           </div>
           <h2>{{ works.subject }}</h2>
-        </div>
+        </a>
         {% endfor %}
         {% for works in continue_movie_works %}
-        <div class="works_main_three" onclick="location.href='{% url 'works:detail' works.id%}'">
+        <a class="works_main_three" href="{% url 'works:detail' works.id%}">
           <div class="works_over_three">
             <img src="{{ works.photo.url }}" alt="{{ works.subject }} 이미지">
             <span class="works_text_three">
@@ -99,7 +103,7 @@
             </span>
           </div>
           <h2>{{ works.subject }}</h2>
-        </div>
+        </a>
         {% endfor %}
     </div>
     </div>

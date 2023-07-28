@@ -33,20 +33,20 @@
     </div>    
     <div class="works_container">
         {% for works in continue_ott_works %}
-        <div class="works_main" onclick="location.href='{% url 'works:detail' works.id%}'">
+        <a class="works_main" href="{% url 'works:detail' works.id%}">
           <span>
             <img src="{{ works.photo.url }}" alt="Work Photo">
           </span>
           <h2>{{ works.subject }}</h2>
-        </div>
+        </a>
         {% endfor %}
         {% for works in continue_movie_works %}
-        <div class="works_main" onclick="location.href='{% url 'works:detail' works.id%}'">
+        <a class="works_main" href="{% url 'works:detail' works.id%}">
           <span>
             <img src="{{ works.photo.url }}" alt="Work Photo">
           </span>
           <h2>{{ works.subject }}</h2>
-        </div>
+        </a>
         {% endfor %}
     </div>
   </div>
@@ -55,12 +55,12 @@
     <h2 class="works_text_one">CONTENTS</h2>
     <div class="works_container">
       {% for works in contents_works %}
-      <div class="works_main" onclick="location.href='{% url 'works:detail' works.id%}'">
+      <a class="works_main" href="{% url 'works:detail' works.id%}">
         <span>
           <img src="{{ works.photo.url }}" alt="Work Photo">
         </span>
         <h2>{{ works.subject }}</h2>
-      </div>
+      </a>
       {% endfor %}
     </div>
   </div>
