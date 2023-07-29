@@ -1,12 +1,12 @@
 <h1 align="center">
-  <a href="https://www.studiobeast.co.kr"><img src="https://github.com/DoYeon0430/studiobeast/assets/104174838/76d13c61-c3d8-45a9-8c72-c9af19dcd292" alt="KAT" width="200"></a>
+  <a href="https://www.studiobeast.co.kr"><img src="https://github.com/DoYeon0430/studiobeast/assets/104174838/76d13c61-c3d8-45a9-8c72-c9af19dcd292" alt="KAT" width="150"></a>
   <br>
   스튜디오야수
   <br>
 </h1>
 
 <p align="center">
-Django로 1인 개발한 영화 제작사 홈페이지입니다.<br>
+Django로 개발한 영화 제작사 홈페이지입니다.<br>
 최적화된 반응형 디자인을 적용해서 모바일 기기에서도 편리하게 이용할 수 있습니다.<br>
 또한 애니메이션을 추가하여 부드러운 생동감을 넣어주었습니다.<br>
 </p>
