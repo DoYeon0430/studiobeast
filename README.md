@@ -26,7 +26,7 @@ Django로 개발한 영화 제작사 홈페이지입니다.<br>
 ## 사용 기술
 - HTML, CSS, JavaScript
 - Django 웹 프레임워크
-- AWS lightsail
+- Amazon Lightsail
 - Nginx, gunicorn
 
 ## 프로젝트 정보
