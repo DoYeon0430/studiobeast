@@ -27,6 +27,7 @@ Django로 개발한 영화 제작사 홈페이지입니다.<br>
 - HTML, CSS, JavaScript
 - Django 웹 프레임워크
 - AWS lightsail
+- Nginx + gunicorn
 
 ## 프로젝트 정보
 - 검색 엔진 등록: Google, Naver, Daum
