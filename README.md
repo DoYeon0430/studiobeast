@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://www.studiobeast.co.kr"><img src="https://github.com/DoYeon0430/studiobeast/assets/104174838/76d13c61-c3d8-45a9-8c72-c9af19dcd292" alt="KAT" width="150"></a>
+  <a href="https://www.studiobeast.co.kr"><img src="https://github.com/DoYeon0430/studiobeast/assets/104174838/76d13c61-c3d8-45a9-8c72-c9af19dcd292" alt="스튜디오야수" width="150"></a>
   <br>
   스튜디오야수
   <br>
