@@ -568,7 +568,7 @@ body {
     color: white;
     left: 50%;
     transform: translateX(-50%);
-    animation: blink 2s infinite;
+    animation: floatUpDown 2s infinite;
   }
 
   /* 네비게이션 바 */
@@ -1036,7 +1036,7 @@ body {
     color: white;
     left: 50%;
     transform: translateX(-50%);
-    animation: blink 2s infinite;
+    animation: floatUpDown 2s infinite;
   }
 
   /* 네비게이션 바 */
