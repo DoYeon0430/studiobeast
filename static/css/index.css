@@ -73,8 +73,8 @@ body {
 }
 
 @keyframes floatUpDown {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -10px); }
 }
   
 @media all and (min-width:1024px) {
@@ -134,7 +134,7 @@ body {
     transform: translateX(-50%);
     animation: floatUpDown 2s infinite;
   }
-
+  
   /* 네비게이션 바 */
   .navbar_main {
     position: fixed;
@@ -1038,6 +1038,7 @@ body {
     transform: translateX(-50%);
     animation: floatUpDown 2s infinite;
   }
+  
 
   /* 네비게이션 바 */
   .navbar_main {
