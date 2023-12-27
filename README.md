@@ -23,12 +23,12 @@ Django로 개발한 영화 제작사 홈페이지입니다.<br>
 
 ![스튜디오야수 UI](https://github.com/DoYeon0430/studiobeast/assets/104174838/278b3023-6add-48ad-9899-2334279f0e79)
 
+## 프로젝트 정보
+- 검색 엔진 등록: Google, Naver, Daum
+- 제작 기간 : 2023년 6월 27일 ~ 2023년 7월 8일
+
 ## 사용 기술
 - HTML, CSS, JavaScript
 - Django 웹 프레임워크
 - Amazon Lightsail
 - Nginx, gunicorn
-
-## 프로젝트 정보
-- 검색 엔진 등록: Google, Naver, Daum
-- 제작 기간 : 2023년 6월 27일 ~ 2023년 7월 8일
